@@ -1,0 +1,50 @@
+@import "../utils/breakpoints";
+@import "../utils/colors";
+
+.about-me__list {
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.about-me__item {
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.about-me__icon {
+  @media screen and (max-width: $tablet) {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+}
+
+.about-me__text {
+  font-size: 17px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+
+  @media screen and (max-width: $tablet) {
+    padding: 0 40px;
+
+    .about-me__item:not(:last-child) & {
+      margin-bottom: 20px;
+    }
+  }
+
+  @media screen and (min-width: $tablet) {
+    max-width: 500px;
+  }
+
+  @media screen and (min-width: $laptop) {
+    max-width: 660px;
+  }
+}

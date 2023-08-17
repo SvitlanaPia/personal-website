@@ -1,0 +1,65 @@
+@import "../utils/breakpoints";
+@import "../utils/colors";
+@import "../utils/transition";
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  background-color: getColor("background");
+
+  @media screen and (max-width: $tablet-1px) {
+    display: none;
+  }
+}
+
+.navigation-container {
+  min-height: 60px;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.navigation-list {
+  display: flex;
+  gap: 18px;
+}
+
+.header__icon {
+  fill: getColor("primary");
+  transition: fill $transition;
+
+  &:hover,
+  &:focus {
+    fill: getColor("accent");
+  }
+
+  .header__link:focus & {
+    fill: getColor("accent");
+  }
+}
+
+.navigation-list__link {
+  color: currentColor;
+  transition: color $transition;
+  font-size: 15px;
+  line-height: 1.5;
+  text-transform: uppercase;
+
+  &:hover,
+  &:focus {
+    color: getColor("accent");
+  }
+  &.active {
+    color: getColor("accent");
+  }
+}
+// @import 'шлях/до/colors';
+
+// .button {
+//   color: getColor('primary');
+//   background-color: getColor('background');
+// }

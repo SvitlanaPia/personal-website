@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Svitlana Piatakovich</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__container">
+        <nav class="navigation-container">
+          <a href="./index.html" class="header__link">
+            <svg width="30" height="30" class="header__icon">
+              <use href="./images/icons.svg#icon-coding"></use>
+            </svg>
+          </a>
+          <ul class="list navigation-list">
+            <li class="navigation-list__item">
+              <a href="#section1" class="link navigation-list__link">About</a>
+            </li>
+            <li class="navigation-list__item">
+              <a href="#section2" class="link navigation-list__link"
+                >Portfolio</a
+              >
+            </li>
+            <li class="navigation-list__item">
+              <a href="#section3" class="link navigation-list__link"
+                >Contacts</a
+              >
+            </li>
+            <!-- <li class="navigation-list__item">
+              <a href="#section4" class="link navigation-list__link"
+                >Секция 4</a
+              >
+            </li> -->
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="container">
+          <div class="hero__content">
+            <picture>
+              <source
+                srcset="./images/svitlana.jpg 1x, ./images/svitlana@2x.jpg 2x"
+              />
+              <img
+                src="./images/svitlana.jpg"
+                alt="Мобільні додатки"
+                width="200"
+                height="200"
+                class="hero__photo"
+              />
+            </picture>
+            <h1 class="hero__title">
+              <span class="hero__title--bigger">Frontend Developer</span>
+              <span class="hero__title--smaller">Svitlana Piatakovich</span>
+            </h1>
+          </div>
+        </div>
+      </section>
+      <section id="section1" class="section">
+        <div class="container">
+          <h2 class="section__title">About me</h2>
+          <ul class="list about-me__list">
+            <li class="about-me__item">
+              <svg width="140" height="140" class="about-me__icon">
+                <use href="./images/icons.svg#icon-web_development"></use>
+              </svg>
+              <p class="about-me__text">
+                As a Junior Frontend Developer, I possess the necessary skills
+                to develop attractive and user-friendly websites. Currently, I
+                am practicing my knowledge of HTML, CSS, and SASS by building
+                this webpage. Creating my own designs can be quite challenging
+                for me, but I am making an effort to explore this field and gain
+                a deeper understanding of how various elements and effects
+                impact the overall user experience of websites.
+              </p>
+            </li>
+            <li class="about-me__item">
+              <svg width="140" height="140" class="about-me__icon">
+                <use href="./images/icons.svg#icon-goals"></use>
+              </svg>
+              <p class="about-me__text">
+                Regarding my software skills, I am a person who always strives
+                to deliver high-quality work, paying attention to details. I
+                enjoy working in a team and growing together towards a common
+                goal.
+              </p>
+            </li>
+            <li class="about-me__item">
+              <svg width="140" height="140" class="about-me__icon">
+                <use href="./images/icons.svg#icon-dance"></use>
+              </svg>
+              <p class="about-me__text">
+                My hobby is dancing and stretching. Sometimes I can practice
+                every day, while other times it may be once a month. Regardless
+                of the frequency, after a dance session, I always feel energized
+                and happy.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section id="section2" class="section section__other-background">
+        <div class="container">
+          <h2 class="section__title">Project experience</h2>
+          <ul class="list project-list">
+            <li class="project-list__item">
+              <h3 class="project-list__title">HTML, CSS, SASS</h3>
+              <div class="project-list__links">
+                <a
+                  href="https://svitlanapia.github.io/goit-markup-hw-08/"
+                  class="project-list__site"
+                  target="_blank"
+                  title="GitHub Live Page"
+                  ><h4 class="project-list__name">WebStudio</h4></a
+                >
+                <a
+                  href="https://github.com/SvitlanaPia/goit-markup-hw-08"
+                  target="_blank"
+                  title="GitHub Repository"
+                  ><svg width="30" height="30" class="project-list__icon">
+                    <use href="./images/icons.svg#icon-github"></use>
+                  </svg>
+                </a>
+              </div>
+              <p class="project-list__description">
+                After learning HTML and CSS, I have completed my first two-page
+                website. The layout is implemented with respect to three
+                breakpoints: 480px, 768px, and 1200px, following the Mobile
+                First approach. All background and content raster images are
+                responsive and support screens with densities of x1 and x2. The
+                BEM methodology and SASS preprocessor are utilized in the
+                development process.
+              </p>
+            </li>
+            <li class="project-list__item">
+              <h3 class="project-list__title">JavaScript</h3>
+              <div class="project-list__links">
+                <a
+                  href="https://svitlanapia.github.io/goit-js-hw-11/"
+                  class="project-list__site"
+                  target="_blank"
+                  title="GitHub Live Page"
+                  ><h4 class="project-list__name">Image Search</h4></a
+                >
+                <a
+                  href="https://github.com/SvitlanaPia/goit-js-hw-11"
+                  target="_blank"
+                  title="GitHub Repository"
+                  ><svg width="30" height="30" class="project-list__icon">
+                    <use href="./images/icons.svg#icon-github"></use>
+                  </svg>
+                </a>
+              </div>
+              <p class="project-list__description">
+                A webpage showcasing the JavaScript with minimal styling. It
+                utilizes the axios library for handling HTTP requests, use the
+                async/await syntax. The notiflix library is employed for
+                displaying messages, while simplelightbox is utilized for
+                creating an image gallery. The backend leverages the public API
+                of the Pixabay service. Pagination functionality has also been
+                implemented, enhancing the browsing experience.
+              </p>
+            </li>
+            <li class="project-list__item">
+              <h3 class="project-list__title">React</h3>
+              <ul class="list project-list__sublist">
+                <li class="project-list__links">
+                  <a
+                    href="https://svitlanapia.github.io/goit-react-hw-08-phonebook/"
+                    class="project-list__site"
+                    target="_blank"
+                    title="GitHub Live Page"
+                    ><h4 class="project-list__name">Phonebook</h4></a
+                  >
+                  <a
+                    href="https://github.com/SvitlanaPia/goit-react-hw-08-phonebook"
+                    target="_blank"
+                    title="GitHub Repository"
+                    ><svg width="30" height="30" class="project-list__icon">
+                      <use href="./images/icons.svg#icon-github"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="project-list__links">
+                  <a
+                    href="https://svitlanapia.github.io/goit-react-hw-05-movies/"
+                    class="project-list__site"
+                    target="_blank"
+                    title="GitHub Live Page"
+                  >
+                    <h4 class="project-list__name">Movie Search</h4>
+                  </a>
+                  <a
+                    href="https://github.com/SvitlanaPia/goit-react-hw-05-movies"
+                    target="_blank"
+                    title="GitHub Repository"
+                    ><svg width="30" height="30" class="project-list__icon">
+                      <use href="./images/icons.svg#icon-github"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="project-list__links">
+                  <a
+                    href="https://svitlanapia.github.io/goit-react-hw-04-images/"
+                    class="project-list__site"
+                    target="_blank"
+                    title="GitHub Live Page"
+                  >
+                    <h4 class="project-list__name">Image Search</h4>
+                  </a>
+                  <a
+                    href="https://github.com/SvitlanaPia/goit-react-hw-04-images"
+                    target="_blank"
+                    title="GitHub Repository"
+                    ><svg width="30" height="30" class="project-list__icon">
+                      <use href="./images/icons.svg#icon-github"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+              <p class="project-list__description">
+                During my React learning, I have completed three small projects.
+                These projects were developed using Create React App. The
+                technologies utilized include React Router, Axios, Notiflix,
+                Styled Components, Pixabay API, The Movie Database (TMDB) API,
+                React Pagination, Redux, Redux Toolkit, and Redux Persist.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section id="section3" class="section">
+        <div class="container">
+          <h2 class="section__title">Contacts</h2>
+          <ul class="list contact-list">
+            <li class="contact-list__item">
+              <a
+                href="https://www.linkedin.com/in/svitlana-piatakovich/"
+                target="_blank"
+                class="link contact-list__link"
+                ><svg width="35" height="35" class="contact-list__icon">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+                <p class="contact-list__text">Svitlana Piatakovich</p>
+              </a>
+            </li>
+            <li class="contact-list__item">
+              <a
+                href="https://github.com/SvitlanaPia"
+                target="_blank"
+                class="link contact-list__link"
+              >
+                <svg width="35" height="35" class="contact-list__icon">
+                  <use href="./images/icons.svg#icon-github"></use>
+                </svg>
+                <p class="contact-list__text">SvitlanaPia</p>
+              </a>
+            </li>
+            <li class="contact-list__item">
+              <a
+                href="https://www.google.com/maps?q=Kyiv,%20Ukraine"
+                target="_blank"
+                class="link contact-list__link"
+              >
+                <svg width="35" height="35" class="contact-list__icon">
+                  <use href="./images/icons.svg#icon-location"></use>
+                </svg>
+                <address class="contact-list__text">Kyiv, Ukraine</address>
+              </a>
+            </li>
+          </ul>
+          <div class="contact-list__email-container">
+            <a
+              href="mailto:svitlana.piatakovich@gmail.com"
+              target="_blank"
+              class="link contact-list__email"
+              >Contact me
+              <svg width="30" height="30" class="contact-list__email-icon">
+                <use href="./images/icons.svg#icon-mail"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <p class="footer-text">&copy; Svitlana Piatakovich 2023</p>
+      </div>
+    </footer>
+    <script src="./js/scroll.js"></script>
+  </body>
+</html>

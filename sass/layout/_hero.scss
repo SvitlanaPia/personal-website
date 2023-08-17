@@ -1,0 +1,68 @@
+@import "../utils/breakpoints";
+@import "../utils/colors";
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: #c4c4c4;
+  background-image: linear-gradient(
+      rgba(34, 34, 36, 0.4),
+      rgba(37, 37, 41, 0.4)
+    ),
+    url("../../images/hero-img.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-right: auto;
+  margin-left: auto;
+  min-height: 400px;
+
+  @media screen and (min-width: $mobile) {
+    min-height: 400px;
+  }
+  @media screen and (min-width: $tablet) {
+    min-height: 600px;
+    margin-top: 60px;
+  }
+  @media screen and (min-width: $laptop) {
+    min-height: 800px;
+  }
+}
+
+.hero__title {
+  color: getColor("hero-text");
+  max-width: 300px;
+  text-align: center;
+  line-height: 1.1;
+}
+.hero__title--bigger {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.hero__title--smaller {
+  display: inline-block;
+  font-size: 20px;
+}
+
+.hero__content {
+  max-width: 400px;
+  background-color: rgba(27, 7, 4, 0.5);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 16px;
+  padding: 20px;
+  border-radius: 10px;
+
+  @media screen and (min-width: $tablet) {
+    min-width: 460px;
+  }
+}
+
+.hero__photo {
+  border-radius: 50%;
+}

@@ -1,0 +1,14 @@
+$colors: (
+  "primary": #1b0704,
+  "accent": #2b5e69,
+  "secondary": #7a4252,
+  "background": #e8e4de,
+  "page-background": #f5f4f1,
+  "white": #ffff,
+  "hero-text": #f7f6f3,
+  "accent-background": #80a2a9,
+);
+
+@function getColor($key) {
+  @return map-get($colors, $key);
+}

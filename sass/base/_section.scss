@@ -1,0 +1,32 @@
+@import "../utils/breakpoints";
+@import "../utils/colors";
+
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: $tablet) {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+
+.section__other-background {
+  background-color: getColor("accent-background");
+}
+
+.section__title {
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 1.17;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  margin-bottom: 40px;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.16;
+  }
+}

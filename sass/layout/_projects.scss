@@ -1,0 +1,100 @@
+@import "../utils/breakpoints";
+@import "../utils/colors";
+@import "../utils/transition";
+
+.project-list {
+  @media screen and (min-width: $mobile) {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 30px;
+    // padding-right: 100px;
+    // padding-left: 100px;
+    //   }
+
+    @media screen and (min-width: $large-screen) {
+      padding-right: 100px;
+      padding-left: 100px;
+    }
+  }
+}
+
+.project-list__item {
+  padding-right: 30px;
+  padding-left: 30px;
+  margin-bottom: 30px;
+
+  max-width: 500px;
+
+  @media screen and (min-width: $laptop) {
+    &:nth-child(3) {
+      max-width: 600px;
+    }
+  }
+}
+
+.project-list__title {
+  font-weight: 300;
+  font-size: 25px;
+  line-height: 1.1;
+  text-transform: uppercase;
+  margin-bottom: 22px;
+}
+
+.project-list__links {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  @media screen and (max-width: $laptop) {
+    margin-bottom: 10px;
+  }
+}
+
+.project-list__site {
+  color: currentColor;
+  font-size: 20px;
+  transition: color $transition;
+
+  &:hover,
+  &:focus {
+    color: getColor("accent");
+  }
+}
+
+.project-list__name {
+  @media screen and (min-width: $laptop) {
+    font-size: 18px;
+  }
+}
+
+.project-list__icon {
+  fill: getColor("primary");
+  transition: fill $transition;
+
+  &:hover,
+  &:focus {
+    fill: getColor("accent");
+  }
+}
+
+.project-list__sublist {
+  @media screen and (min-width: $tablet) {
+  }
+
+  @media screen and (min-width: $laptop) {
+    display: flex;
+    gap: 10px;
+    max-width: 500px;
+  }
+}
+
+.project-list__description {
+  font-size: 17px;
+  line-height: 1.4;
+
+  @media screen and (min-width: $tablet) {
+    max-width: 500px;
+  }
+}
